@@ -1,0 +1,26 @@
+product: 1.0.0
+info:
+  title: Test_API auto product
+  name: test-api-auto-product
+  version: 1.0.0
+gateways:
+- datapower-api-gateway
+apis:
+  Test_API:
+    $ref: test-api_1.0.0.yaml
+plans:
+  default:
+    title: Default Plan
+    description: Default Plan
+    approval: false
+visibility:
+  view:
+    enabled: true
+    type: public
+    tags: []
+    orgs: []
+  subscribe:
+    enabled: true
+    type: authenticated
+    tags: []
+    orgs: []
